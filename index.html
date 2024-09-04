@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delight</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="Images/fast-food.png">
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="" class="logo"><ion-icon name="fast-food"></ion-icon> Food Delight</a>
+    <div class="box">
+      <div class="cart-count">0</div>
+      <ion-icon name="cart" id="cart-icon" onclick="cart()"></ion-icon>
+    </div>
+
+    <div class="cart-container">
+      <div class="cart-head">
+        <h2>Cart Items</h2>
+        <div class="close-ab">
+          <button class="close">&times;</button>
+        </div>
+      </div>
+
+      <div class="shop-basket">
+
+      </div>
+<!--
+
+<div class="grid-con">
+  <div class="food-image-con">
+    <div>
+      <img src="Images/img-1.jpg" alt="">
+    </div>
+  </div>
+  <div class="details">
+    <h2>Plain</h2>
+    <div class="fl">
+      <div>Rs.40</div>
+      <div>Rs.40</div>
+    </div>
+    <input type="number" value="1" class="inp">
+  </div>
+    <ion-icon name="trash" class="delete"></ion-icon>
+</div>
+
+
+<div class="grid-con">
+  <div class="food-image-con">
+    <div>
+      <img src="Images/img-2.jpg" alt="">
+    </div>
+  </div>
+  <div class="details">
+    <h2>Plain</h2>
+    <div class="fl">
+      <div>Rs.40</div>
+      <div>Rs.40</div>
+    </div>
+    <input type="number" value="1" class="inp">
+  </div>
+    <ion-icon name="trash" class="delete"></ion-icon>
+</div> 
+
+-->
+
+<h2 class="empty">Your Cart is Empty</h2>
+
+  <div class="total">
+    <div class="final-price">Total Rs.0</div>
+  </div>
+
+  <div class="place-order">
+    <button class="place">PLACE ORDER</button>
+  </div>
+
+
+
+    </div>
+  </div>
+  </header>
+
+  <div class="container">
+      <h2 class="shop-title">Discover the Best Food</h2>
+<div class="shop-content">
+  <div class="food-card">
+    <div class="food-img">
+      <img src="Images/img-1.jpg" class="f-img">
+    </div>
+    <h2 class="food-name">Plain</h2>
+    <span class="food-price">Rs.40</span>
+    <ion-icon name="cart" class="cart-icons"></ion-icon>
+  </div>
+
+  <div class="food-card">
+    <div class="food-img">
+      <img src="Images/img-2.jpg" class="f-img">
+    </div>
+    <h2 class="food-name">Paper Roast</h2>
+    <span class="food-price">Rs.65</span>
+    <ion-icon name="cart" class="cart-icons"></ion-icon>
+  </div>
+
+  <div class="food-card">
+    <div class="food-img">
+      <img src="Images/img-3.jpg" class="f-img">
+    </div>
+    <h2 class="food-name">Onion Roast</h2>
+    <span class="food-price">Rs.75</span>
+    <ion-icon name="cart" class="cart-icons"></ion-icon>
+  </div>
+
+  <div class="food-card">
+    <div class="food-img">
+      <img src="Images/img-4.jpg" class="f-img">
+    </div>
+    <h2 class="food-name">Egg Parotta</h2>
+    <span class="food-price">Rs.55</span>
+    <ion-icon name="cart" class="cart-icons"></ion-icon>
+  </div>
+
+  <div class="food-card">
+    <div class="food-img">
+      <img src="Images/img-5.jpg" class="f-img">
+    </div>
+    <h2 class="food-name">Plain Omelette</h2>
+    <span class="food-price">Rs.25</span>
+    <ion-icon name="cart" class="cart-icons"></ion-icon>
+  </div>
+
+  <div class="food-card">
+    <div class="food-img">
+      <img src="Images/img-6.jpg" class="f-img">
+    </div>
+    <h2 class="food-name">Kadai Fry</h2>
+    <span class="food-price">Rs.150</span>
+    <ion-icon name="cart" class="cart-icons"></ion-icon>
+  </div>
+
+  <div class="food-card">
+    <div class="food-img">
+      <img src="Images/img-7.jpg" class="f-img">
+    </div>
+    <h2 class="food-name">Egg Veechu</h2>
+    <span class="food-price">Rs.65</span>
+    <ion-icon name="cart" class="cart-icons"></ion-icon>
+  </div>
+
+  <div class="food-card">
+    <div class="food-img">
+      <img src="Images/img-8.jpg" class="f-img">
+    </div>
+    <h2 class="food-name">Egg Roast</h2>
+    <span class="food-price">Rs.65</span>
+    <ion-icon name="cart" class="cart-icons"></ion-icon>
+  </div>
+</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <script src="script.js"></script>
+
+
+  
+
+  </script>
+</body>
+</html>
